@@ -3,7 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name = 'index'),
-    path('Lista/', views.lista, name='lista')
+    path('Lista/', views.lista, name='lista'),
+    path('detalhe/<int:id>', views.detalhe, name='detalhe')
 ]
-
-#python manage.py runserver
